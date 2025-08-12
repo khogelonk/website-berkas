@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Kelurahan</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background: #2196F3; color: white; padding: 20px; text-align: center; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; }
+    section { padding: 20px; }
+    .card { background: #f4f4f4; padding: 15px; margin: 10px 0; border-radius: 5px; }
+    .photo { text-align: center; margin: 20px 0; }
+    .photo img { max-width: 100%; height: auto; border-radius: 5px; }
+    .pejabat-container { display: flex; flex-wrap: wrap; gap: 15px; }
+    .pejabat { flex: 1 1 calc(33% - 15px); background: #fff; border: 1px solid #ddd; padding: 10px; text-align: center; border-radius: 5px; }
+    .pejabat img { width: 100px; height: 100px; object-fit: cover; border-radius: 50%; }
+    footer { background: #eee; text-align: center; padding: 10px; margin-top: 20px; }
+    @media(max-width:600px){
+      .pejabat { flex: 1 1 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kelurahan Berkas</h1>
+    <nav>
+      <a href="#tentang">Tentang</a>
+      <a href="#pejabat">Pejabat</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <section id="tentang">
+    <h2>Tentang Kelurahan</h2>
+    <p>Kelurahan Contoh adalah kelurahan dengan visi menjadi kelurahan yang maju dan sejahtera.</p>
+    <div class="photo">
+      <img src="foto_kelurahan.jpg" alt="Foto Kantor Kelurahan">
+    </div>
+  </section>
+
+  <section id="pejabat">
+    <h2>Struktur Pejabat</h2>
+    <div class="pejabat-container">
+      <div class="pejabat">
+        <img src="lurah.jpg" alt="Foto Lurah">
+        <h3>Luna Maswita</h3>
+        <p>Lurah</p>
+      </div>
+      <div class="pejabat">
+        <img src="sekretaris.jpg" alt="Foto Sekretaris">
+        <h3>jhfiydusy</h3>
+        <p>Sekretaris</p>
+      </div>
+      <div class="pejabat">
+        <img src="kaur_pemerintahan.jpg" alt="Foto Kaur Pemerintahan">
+        <h3>tdfyudyud</h3>
+        <p>Kaur Pemerintahan</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="layanan">
+    <h2>Layanan Publik</h2>
+    <div class="card">Pembuatan KTP - Senin hingga Jumat</div>
+    <div class="card">Administrasi KK - Senin hingga Kamis</div>
+  </section>
+
+  <section id="kontak">
+    <h2>Kontak</h2>
+    <p>Alamat: Jl. Pari, Ps. Berkas, Tlk Segara, Kota Bengkulu</p>
+    <p>Telepon: 085273777590</p>
+    <p>Jam Pelayanan: 08.00 - 15.00</p>
+  </section>
+
+  <footer>
+    &copy; 2025 KKN 25 UMB
+  </footer>
+</body>
+</html>
